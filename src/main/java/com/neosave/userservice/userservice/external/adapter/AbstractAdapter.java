@@ -31,7 +31,8 @@ public abstract class AbstractAdapter {
           restTemplate.exchange(url, HttpMethod.GET, new HttpEntity<T>(headers), responseClass);
       return responseEntity.getBody();
     } catch (Exception e) {
-      throw new CustomException(ErrorMessage.EXTERNAL_SERVICE_EXCEPTION, HttpStatus.FAILED_DEPENDENCY.value());
+      throw new CustomException(ErrorMessage.EXTERNAL_SERVICE_EXCEPTION,
+          HttpStatus.FAILED_DEPENDENCY.value());
     }
   }
 

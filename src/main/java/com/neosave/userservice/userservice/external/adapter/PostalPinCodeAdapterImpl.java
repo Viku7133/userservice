@@ -14,12 +14,12 @@ public class PostalPinCodeAdapterImpl extends AbstractAdapter implements PostalP
   private String getPostOfficeUrl;
 
   /**
-   *
    * @param pinCode
    * @return
    * @throws CustomException
    */
-  public List<PinCodeResponseEntity> getPostalPinCodeResponse(String pinCode) throws CustomException {
+  public List<PinCodeResponseEntity> getPostalPinCodeResponse(String pinCode)
+      throws CustomException {
     URI url = URI.create(getPostOfficeUrl + pinCode);
     return getExternalApiResponse(url, getBaseHeaders(), List.class);
   }

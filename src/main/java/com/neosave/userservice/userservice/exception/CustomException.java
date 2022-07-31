@@ -11,5 +11,4 @@ public class CustomException extends Exception {
     this.errorCode = errorCode;
   }
 
-
 }
