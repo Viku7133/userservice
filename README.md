@@ -1,4 +1,4 @@
-# User Management System V2
+# User Management System
 
 ## Setup Guidelines
 configure server port by adding the following line in application.properties file
